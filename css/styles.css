@@ -178,4 +178,9 @@ body {
     .container {
         grid-template-columns: auto 40vh auto;
     }
+
+    .creator-text {
+        font-size: 0.9rem;
+        padding: 0.5rem 0;
+    }
 }
