@@ -24,19 +24,24 @@ body {
 
 }
 
-.container {
-    display: flex;
-    justify-content: center;
+.body {
+    display: grid;
     align-items: center;
     height: 100vh;
-    
+}
+
+.container {
+    display: grid;
+    height: fit-content;
+    grid-template-columns: auto 80vw auto;
 }
 
 /* Card */
 .card {
     background-color: var(--nft-card-bg);
-    border-radius: 30px;
-    padding: 1.5rem
+    border-radius: 15px;
+    padding: 1.5rem;
+    grid-column: 2;
 }
 
 /* Card Img */
@@ -165,6 +170,12 @@ body {
     text-decoration-line: none;
 }
 
-@media (min-width: 800px) {
-    
+/* Responsive */
+
+@media (min-width: 500px) {
+
+    /* grid layout on big screen */
+    .container {
+        grid-template-columns: auto 40vh auto;
+    }
 }
